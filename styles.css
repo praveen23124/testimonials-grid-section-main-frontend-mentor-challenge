@@ -1,0 +1,114 @@
+
+body{
+  background-color: hsl(210, 46%, 95%);
+}
+.testimonialGrid{
+  padding: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+}
+.firstContainer{
+  background-color: hsl(263, 55%, 52%);
+  padding: 2.5rem;
+  border-radius: 8px;
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 80% 2%;
+}
+
+.secondContainer{
+ background-color: hsl(217, 19%, 35%);
+ padding: 2.5rem;
+ border-radius: 8px;
+
+}
+.thirdContainer{
+ background-color: hsl(0, 0%, 100%);
+ padding: 2.5rem;
+ border-radius: 8px;
+
+}
+.fourthContainer{
+ background-color: hsl(219, 29%, 14%);
+ padding: 2.5rem;
+ border-radius: 8px;
+
+}
+.fifthContainer{
+ background-color: hsl(0, 0%, 100%);
+ padding: 2.5rem;
+ border-radius: 8px;
+
+}
+h3{
+  color: white;
+}
+
+.thirdFeedback{
+  color: black;
+}
+.fifthFeedback{
+  color: black;
+}
+img{
+  border-radius: 30px;
+  width: 40px;
+  border: 3px solid white;
+}
+.nameGraduate{
+  line-height: 0.6;
+  display: inline-block;
+  margin-left: 1.3rem;
+}
+.para{
+ opacity: 70%;
+ line-height: 1.5;
+ color: white;
+}
+.thirdPara{
+  color: black;
+  opacity: 70%;
+  line-height: 1.5;
+}
+.fifthPara{
+  color: black;
+  opacity: 70%;
+  line-height: 1.5;
+}
+.name{
+  color: white;
+}
+.graduation{
+  color: white;
+  opacity: 50%;
+}
+.thirdName{
+  color: black;
+}
+.fifthName{
+  color: black;
+}
+.thirdGraduation{
+  color: black;
+}
+.fifthGraduation{
+  color: black;
+}
+@media (min-width: 1100px) {
+  .testimonialGrid{
+   grid-template-columns: repeat(4, 1fr);
+   }
+  .firstContainer{
+    grid-column: span 2;
+  }
+  .fourthContainer{
+    grid-column: span 2;
+  }
+  .fifthContainer{
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* grid-row: 1/3; */
+    /* grid-row: 1/span 2; */
+  }
+}
